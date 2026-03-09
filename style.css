@@ -1,0 +1,99 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+background:linear-gradient(to top, #87ceeb, #fff);
+
+}   
+.chiziq{
+position:absolute;
+bottom:150px;
+width:100%;
+height:2px;
+background:#aaa;
+}
+
+.moshina{
+position:absolute;
+bottom:140px;
+font-size:40px;
+animation:moshina 6s linear infinite alternate;
+}
+
+
+.quyosh{
+position:absolute;
+left:100px;
+bottom:-100px;
+width:120px;
+height:120px;
+background:orange;
+border-radius:50%;
+animation:quyosh 6s linear infinite;
+}
+
+
+.dumoloq{
+position:absolute;
+top:40px;
+left:40px;
+width:60px;
+height:60px;
+border-radius:50%;
+border:6px solid lightblue;
+border-top:6px solid blue;
+animation:dumoloq 1s linear infinite;
+}
+
+
+.qizil-dumoloq{
+position:absolute;
+left:40px;
+bottom:0;
+width:40px;
+height:40px;
+background:red;
+border-radius:50%;
+animation:qizilDumoloq 3s linear infinite;
+}
+
+
+.puls{
+position:absolute;
+left:20px;
+bottom:200px;
+padding:10px 25px;
+background:blue;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+animation:puls 2s infinite;
+}
+
+@keyframes puls{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+@keyframes qizilDumoloq{
+0%{bottom:0;}
+50%{bottom:300px;}
+100%{bottom:0;}
+}
+
+@keyframes dumoloq{
+to{ transform:rotate(360deg);}
+}
+
+@keyframes quyosh{
+0%{bottom:-120px;}
+50%{bottom:400px;}
+100%{bottom:-120px;}
+}
+@keyframes moshina{
+from{ left:0;}
+to{ left:95%;}
+}
